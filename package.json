@@ -6,7 +6,8 @@
   "scripts": {
     "test": "lab -v ./test/*.test.js -t 100",
     "coverage": "lab -s ./test/*.test.js -r lcov | coveralls",
-    "lint": "lab -dL"
+    "lint": "lab -dL",
+    "browserify": "./node_modules/.bin/browserify ./lib/varo.js -o ./varo.js -s Varo"
   },
   "author": "Dean McDonnell (https://github.com/mcdonnelldean)",
   "contributors": [
@@ -27,6 +28,7 @@
     "fastparallel": "2.x.x"
   },
   "devDependencies": {
+    "browserify": "^13.0.0",
     "code": "2.x.x",
     "coveralls": "^2.11.6",
     "eslint-config-seneca": "1.x.x",
