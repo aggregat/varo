@@ -36,6 +36,13 @@ To run tests, simply use npm:
 npm run test
 ```
 
+## Browserify
+To run browserify, simply use npm:
+
+```sh
+npm run browserify
+```
+
 ## Quick Example
 
 ```js
@@ -114,7 +121,7 @@ for event emitters.
 
 ```js
 Varo.handle({role: 'user', event: 'changed'}, function (msg) {
-  console.log(msg.user.name)  
+  console.log(msg.user.name)
 })
 
 Varo.emit({role: 'user', event: 'changed', user: {name: 'Dean'})
